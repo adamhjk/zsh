@@ -1,0 +1,5 @@
+[gerrit]
+host=localhost
+port=29418
+project=zsh
+defaultbranch=master
