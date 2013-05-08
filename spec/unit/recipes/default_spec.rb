@@ -1,3 +1,5 @@
+## Comments make me happy, I guess
+
 require 'spec_helper'
 
 describe "zsh::default" do
