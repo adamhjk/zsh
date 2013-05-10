@@ -11,20 +11,10 @@ tmpdirname = Dir.mktmpdir("chefspec-berks")
 berks.install(path: tmpdirname)
 COOKBOOK_PATH = tmpdirname
 
-module ChefSpec
-  class ChefRunner
-    %w{deliverance_git deliverance_dotfile}.each do |rtype|
-      define_method(rtype) do |name|
-        find_resource(rtype, name)
-      end
-    end
-  end
-end
-
 RSpec.configure do |c|
   #c.filter_run :focus => true
   #c.run_all_when_everything_filtered = true
-  c.after(:all) do
+  c.after(:suite) do
     FileUtils.rm_rf(tmpdirname)
   end
 end
