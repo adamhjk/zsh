@@ -8,6 +8,7 @@ group :test do
   gem "foodcritic"
   gem "guard"
   gem "guard-rspec"
+  gem "guard-kitchen"
   gem "ruby_gntp"
   gem 'rb-inotify', :require => false
   gem 'rb-fsevent', :require => false
