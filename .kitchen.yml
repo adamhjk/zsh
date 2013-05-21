@@ -1,13 +1,17 @@
 ---
 driver_plugin: vagrant
 platforms:
-platforms:
 - name: centos-6.4
   driver_config:
     box: opscode-centos-6.4
     box_url: http://opscode-vm.s3.amazonaws.com/vagrant/opscode_centos-6.4_chef-11.4.4.box
+    http_proxy: http://cinproxy1.glb.comfin.gtm.ge.com
+    https_proxy: http://cinproxy1.glb.comfin.gtm.ge.com
   run_list:
-  - recipe[yum::epel]
+  - recipe[yum::yum]
+  attributes: 
+    yum:
+      proxy: http://cinproxy1.glb.comfin.gtm.ge.com  
 suites:
 - name: default
   run_list:
