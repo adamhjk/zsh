@@ -14,5 +14,5 @@ group :test do
   gem 'rb-fsevent', :require => false
   gem 'rb-fchange', :require => false
 end
-gem "test-kitchen", git: 'git://github.com/opscode/test-kitchen.git', branch: 'windows', :group => :integration
-gem 'kitchen-vagrant', git: 'git://github.com/opscode/kitchen-vagrant.git', branch: 'master', :group => :integration
+gem "test-kitchen", git: 'http://github.com/opscode/test-kitchen', branch: 'windows', :group => :integration
+gem 'kitchen-vagrant', git: 'http://github.com/opscode/kitchen-vagrant', branch: 'master', :group => :integration
