@@ -25,3 +25,4 @@ group :test do
 end
 gem "test-kitchen", git: 'https://github.com/opscode/test-kitchen.git', branch: 'windows', :group => :integration
 gem 'kitchen-vagrant', git: 'https://github.com/opscode/kitchen-vagrant.git', branch: 'master', :group => :integration
+gem 'chef', git: 'https://github.com/jonsmorrow/chef.git', branch: 'rm_mp_dir'
