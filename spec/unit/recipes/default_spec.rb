@@ -52,7 +52,7 @@ describe "zsh::default" do
       runner = ChefSpec::Runner.new(
         log_level: :error
       ) do |node|
-        node.override['platform_family'] = 'fedora'
+        node.automatic['platform_family'] = 'fedora'
       end
       Chef::Config.force_logger true
       runner.converge('recipe[zsh::default]')
