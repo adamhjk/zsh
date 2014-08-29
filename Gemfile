@@ -1,11 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'berkshelf', "~>2"
-gem 'thor-foodcritic'
-
 group :test do
-  gem "chefspec"
-  gem "foodcritic"
   gem "guard"
   gem "guard-rspec"
   gem "guard-kitchen"
